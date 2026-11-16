@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h2 class="logo">Swad<span>Sutra</span></h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="section">
+    <h1>Explore Our Recipes</h1>
+    <p>Find something delicious to cook today!</p>
+
+    <div class="filters">
+        <input type="text" id="recipe-search" placeholder="Search recipes...">
+
+       <select id="category-filter">
+    <option value="All">All Categories</option>
+    <option value="Breakfast">Breakfast</option>
+    <option value="Lunch">Lunch</option>
+    <option value="Dinner">Dinner</option>
+    <option value="Dessert">Dessert</option>
+    <option value="Indian">Indian Food</option>
+</select>
+    </div>
+
+    <div id="all-recipes" class="recipe-grid"></div>
+    <p id="no-results" hidden>No recipes found!</p>
+</section>
+
+<footer>
+    <p>© 2026 Swad Sutra</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
